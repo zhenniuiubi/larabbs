@@ -56,7 +56,7 @@
               <div class="col-md-6">
                 <input id="captcha" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}"
                   name="captcha" required><img class="thumbnail captcha mt-3 mb-2" src="{{ captcha_src('math') }}"
-                  onclick="this.src='/captcha/flat?'+Math.random()" title="点击图片重新获取验证码">
+                  onclick="this.src='/captcha/math?'+Math.random()" title="点击图片重新获取验证码">
                 @if ($errors->has('captcha'))
                 <span class=" invalid-feedback" role="alert">
                   <strong>{{ $errors->first('captcha') }}</strong>
