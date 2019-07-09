@@ -39,7 +39,7 @@ class ResetPasswordController extends Controller
 
     public function sendResetResponse()
     {
-        session()->flash('success','修改密码成功!');
+        session()->flash('success', '密码更新成功，您已成功登录！');
         return redirect($this->redirectPath());
     }
 }
